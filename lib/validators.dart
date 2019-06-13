@@ -370,9 +370,9 @@ bool isIn(String str, values) {
 /// check if the string is a credit card
 bool isCreditCard(String str) {
   String sanitized = str.replaceAll(new RegExp(r'[^0-9]+'), '');
-  if (!_creditCard.hasMatch(sanitized)) {
-    return false;
-  }
+  //if (!_creditCard.hasMatch(sanitized)) { // issue #8
+    //return false;
+  //}
 
   // Luhn algorithm
   int sum = 0;
